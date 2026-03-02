@@ -1,0 +1,18 @@
+networks:
+  devcontainer:
+    internal: false
+services:
+  devcontainer:
+    build:
+      context: '../'
+      dockerfile: './Dockerfile'
+      target: 'devcontainer'
+    command: 'sleep infinity'
+    environment:
+      APP_ENV: 'local'
+      NODE_ENV: 'development'
+    networks:
+      - 'devcontainer'
+    user: 'devcontainer:devcontainer'
+    volumes:
+      - '../:/var/www/html'

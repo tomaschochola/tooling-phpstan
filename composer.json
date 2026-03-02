@@ -1,0 +1,68 @@
+{
+  "authors": [
+    {
+      "email": "tomaschochola@tomaschochola.cz",
+      "homepage": "https://github.com/tomaschochola",
+      "name": "Tomáš Chochola",
+      "role": "Author"
+    }
+  ],
+  "config": {
+    "allow-plugins": false,
+    "audit": {
+      "abandoned": "fail"
+    },
+    "platform-check": true,
+    "process-timeout": 0,
+    "sort-packages": true
+  },
+  "description": "tomaschochola/php-tooling-phpstan-config",
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/tomaschochola"
+    }
+  ],
+  "homepage": "https://github.com/tomaschochola/php-tooling-phpstan-config",
+  "keywords": [
+    "tomaschochola",
+    "TomasChochola",
+    "Tomas Chochola",
+    "Tomáš Chochola",
+    "php-tooling-phpstan-config"
+  ],
+  "license": "CC-BY-ND-4.0",
+  "minimum-stability": "dev",
+  "name": "tomaschochola/php-tooling-phpstan-config",
+  "prefer-stable": true,
+  "readme": "./README.md",
+  "require": {
+    "php": "^8.5.0",
+    "phpstan/extension-installer": "^1.4",
+    "phpstan/phpstan": "^2.1",
+    "phpstan/phpstan-beberlei-assert": "^2.0",
+    "phpstan/phpstan-deprecation-rules": "^2.0",
+    "phpstan/phpstan-dibi": "^2.0",
+    "phpstan/phpstan-doctrine": "^2.0",
+    "phpstan/phpstan-mockery": "^2.0",
+    "phpstan/phpstan-nette": "^2.0",
+    "phpstan/phpstan-phpunit": "^2.0",
+    "phpstan/phpstan-strict-rules": "^2.0",
+    "phpstan/phpstan-symfony": "^2.0",
+    "phpstan/phpstan-webmozart-assert": "^2.0"
+  },
+  "require-dev": {
+    "ext-intl": "*",
+    "ext-pcntl": "*",
+    "ext-xdebug": "*",
+    "ext-zip": "*",
+    "roave/security-advisories": "dev-latest"
+  },
+  "support": {
+    "docs": "https://github.com/tomaschochola/php-tooling-phpstan-config",
+    "email": "tomaschochola@tomaschochola.cz",
+    "issues": "https://github.com/tomaschochola/php-tooling-phpstan-config/issues",
+    "source": "https://github.com/tomaschochola/php-tooling-phpstan-config.git"
+  },
+  "type": "library"
+}

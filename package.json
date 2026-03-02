@@ -1,0 +1,40 @@
+{
+  "author": {
+    "email": "tomaschochola@tomaschochola.cz",
+    "name": "Tomáš Chochola",
+    "url": "https://github.com/tomaschochola"
+  },
+  "bugs": {
+    "email": "tomaschochola@tomaschochola.cz",
+    "url": "https://github.com/tomaschochola/php-tooling-phpstan-config/issues"
+  },
+  "contributors": [
+    {
+      "email": "tomaschochola@tomaschochola.cz",
+      "name": "Tomáš Chochola",
+      "url": "https://github.com/tomaschochola"
+    }
+  ],
+  "description": "@tomaschochola/php-tooling-phpstan-config",
+  "devDependencies": {
+    "@tomaschochola/ts-tooling-eslint-config": "github:tomaschochola/ts-tooling-eslint-config#1.x",
+    "@tomaschochola/ts-tooling-prettier-config": "github:tomaschochola/ts-tooling-prettier-config#1.x"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/tomaschochola"
+  },
+  "homepage": "https://github.com/tomaschochola/php-tooling-phpstan-config",
+  "keywords": [
+    "tomaschochola",
+    "TomasChochola",
+    "Tomas Chochola",
+    "Tomáš Chochola",
+    "php-tooling-phpstan-config"
+  ],
+  "license": "CC-BY-ND-4.0",
+  "name": "@tomaschochola/php-tooling-phpstan-config",
+  "repository": "github:tomaschochola/php-tooling-phpstan-config",
+  "sideEffects": false,
+  "type": "module"
+}

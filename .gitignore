@@ -1,0 +1,18 @@
+# generic
+.DS_Store
+.fleet
+.idea
+.vscode
+.zed
+
+# node
+/node_modules
+/package-lock.json
+
+# composer
+/composer.lock
+/vendor
+
+# environment files and secrets
+/.env
+/.secrets

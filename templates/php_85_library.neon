@@ -1,0 +1,7 @@
+includes:
+  - ./vendor/tomaschochola/phpstan-stack/src/configs/php_85_library.neon
+
+parameters:
+  paths:
+    - ./src
+    - ./tests

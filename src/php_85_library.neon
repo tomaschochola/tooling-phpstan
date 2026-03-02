@@ -1,0 +1,31 @@
+includes:
+  - ./vendor/phpstan/phpstan-beberlei-assert/extension.neon
+  - ./vendor/phpstan/phpstan-deprecation-rules/rules.neon
+  - ./vendor/phpstan/phpstan-dibi/extension.neon
+  - ./vendor/phpstan/phpstan-doctrine/extension.neon
+  - ./vendor/phpstan/phpstan-doctrine/rules.neon
+  - ./vendor/phpstan/phpstan-mockery/extension.neon
+  - ./vendor/phpstan/phpstan-nette/extension.neon
+  - ./vendor/phpstan/phpstan-nette/rules.neon
+  - ./vendor/phpstan/phpstan-phpunit/extension.neon
+  - ./vendor/phpstan/phpstan-phpunit/rules.neon
+  - ./vendor/phpstan/phpstan-strict-rules/rules.neon
+  - ./vendor/phpstan/phpstan-symfony/extension.neon
+  - ./vendor/phpstan/phpstan-symfony/rules.neon
+  - ./vendor/phpstan/phpstan-webmozart-assert/extension.neon
+  - ./vendor/phpstan/phpstan/conf/bleedingEdge.neon
+
+parameters:
+  checkBenevolentUnionTypes: true
+  checkImplicitMixed: true
+  checkMissingCallableSignature: true
+  checkMissingOverrideMethodAttribute: true
+  checkTooWideReturnTypesInProtectedAndPublicMethods: false
+  checkUninitializedProperties: true
+  level: max
+  reportAlwaysTrueInLastCondition: true
+  reportAnyTypeWideningInVarTag: true
+  reportPossiblyNonexistentConstantArrayOffset: true
+  reportPossiblyNonexistentGeneralArrayOffset: true
+  tipsOfTheDay: false
+  treatPhpDocTypesAsCertain: false
