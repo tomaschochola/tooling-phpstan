@@ -11,8 +11,17 @@ services:
     environment:
       APP_ENV: 'local'
       NODE_ENV: 'development'
+      COMPOSER_CACHE_DIR: '/home/devcontainer/.composer'
+      npm_config_cache: '/home/devcontainer/.npm'
     networks:
       - 'devcontainer'
     user: 'devcontainer:devcontainer'
     volumes:
       - '../:/var/www/html'
+      - 'global_composer_cache:/home/devcontainer/.composer'
+      - 'global_npm_cache:/home/devcontainer/.npm'
+volumes:
+  global_composer_cache:
+    name: 'global_composer_cache'
+  global_npm_cache:
+    name: 'global_npm_cache'
