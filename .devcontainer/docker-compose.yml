@@ -10,8 +10,8 @@ services:
     command: 'sleep infinity'
     environment:
       APP_ENV: 'local'
-      NODE_ENV: 'development'
       COMPOSER_CACHE_DIR: '/home/devcontainer/.composer'
+      NODE_ENV: 'development'
       npm_config_cache: '/home/devcontainer/.npm'
     networks:
       - 'devcontainer'
