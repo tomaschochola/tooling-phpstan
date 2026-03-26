@@ -15,7 +15,7 @@ services:
       npm_config_cache: '/home/devcontainer/.npm'
     networks:
       - 'devcontainer'
-    user: 'devcontainer:devcontainer'
+    user: 'devcontainer'
     volumes:
       - '../:/var/www/html'
       - 'global_composer_cache:/home/devcontainer/.composer'
