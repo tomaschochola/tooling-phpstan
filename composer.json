@@ -16,24 +16,24 @@
     "process-timeout": 0,
     "sort-packages": true
   },
-  "description": "tomaschochola/phpstan-stack",
+  "description": "tomaschochola/tooling-phpstan",
   "funding": [
     {
       "type": "github",
       "url": "https://github.com/sponsors/tomaschochola"
     }
   ],
-  "homepage": "https://github.com/tomaschochola/phpstan-stack",
+  "homepage": "https://github.com/tomaschochola/tooling-phpstan",
   "keywords": [
     "tomaschochola",
     "TomasChochola",
     "Tomas Chochola",
     "Tomáš Chochola",
-    "phpstan-stack"
+    "tooling-phpstan"
   ],
   "license": "CC-BY-ND-4.0",
   "minimum-stability": "dev",
-  "name": "tomaschochola/phpstan-stack",
+  "name": "tomaschochola/tooling-phpstan",
   "prefer-stable": true,
   "readme": "./README.md",
   "require": {
@@ -59,10 +59,10 @@
     "roave/security-advisories": "dev-latest"
   },
   "support": {
-    "docs": "https://github.com/tomaschochola/phpstan-stack",
+    "docs": "https://github.com/tomaschochola/tooling-phpstan",
     "email": "tomaschochola@tomaschochola.cz",
-    "issues": "https://github.com/tomaschochola/phpstan-stack/issues",
-    "source": "https://github.com/tomaschochola/phpstan-stack.git"
+    "issues": "https://github.com/tomaschochola/tooling-phpstan/issues",
+    "source": "https://github.com/tomaschochola/tooling-phpstan.git"
   },
   "type": "library"
 }
