@@ -22,13 +22,13 @@ check: lint audit
 lint: eslint_check prettier_check
 
 .PHONY: audit
-audit: npm_audit audit_composer
+audit: npm_audit composer_audit
 
 .PHONY: install
-install: npm_install install_composer
+install: npm_install composer_install
 
 .PHONY: update
-update: npm_update update_composer
+update: npm_update composer_update
 
 .PHONY: clean
 clean:
@@ -63,21 +63,21 @@ prettier_check: ./node_modules ./prettier.config.js
 npm_audit: ./node_modules ./package.json ./package-lock.json
 	npm audit --ignore-scripts --audit-level=critical --install-links --include=prod --include=dev --include=peer --include=optional
 
-.PHONY: audit_composer
-audit_composer: ./vendor ./composer.json ./composer.lock
-	composer audit --no-ansi --no-interaction --no-plugins --no-scripts
-	composer check-platform-reqs --no-ansi --no-interaction --no-plugins --no-scripts
-	composer validate --no-ansi --no-interaction --no-plugins --no-scripts --strict --with-dependencies --check-lock
-	composer dump-autoload --no-ansi --no-interaction --no-plugins --no-scripts --optimize --strict-psr --strict-ambiguous
+.PHONY: composer_audit
+composer_audit: ./vendor ./composer.json ./composer.lock
+	composer audit --no-plugins --no-scripts
+	composer check-platform-reqs --no-plugins --no-scripts
+	composer validate --no-plugins --no-scripts --strict --with-dependencies --check-lock
+	composer dump-autoload --no-plugins --no-scripts --optimize --strict-psr --strict-ambiguous
 
 .PHONY: npm_install
 npm_install: ./package.json ./package-lock.json
 	npm install --ignore-scripts --install-links --include=prod --include=dev --include=peer --include=optional
 
-.PHONY: install_composer
-install_composer: ./composer.json ./composer.lock
-	composer install --no-ansi --no-interaction --no-plugins --no-scripts --no-autoloader
-	composer dump-autoload --no-ansi --no-interaction --no-plugins --no-scripts --optimize --strict-psr --strict-ambiguous
+.PHONY: composer_install
+composer_install: ./composer.json ./composer.lock
+	composer install --no-plugins --no-scripts --no-autoloader
+	composer dump-autoload --no-plugins --no-scripts --optimize --strict-psr --strict-ambiguous
 
 .PHONY: npm_update
 npm_update: ./package.json
@@ -85,12 +85,12 @@ npm_update: ./package.json
 	rm -rf ./package-lock.json
 	npm update --ignore-scripts --install-links --include=prod --include=dev --include=peer --include=optional
 
-.PHONY: update_composer
-update_composer: ./composer.json
+.PHONY: composer_update
+composer_update: ./composer.json
 	rm -rf ./vendor
 	rm -rf ./composer.lock
-	composer update --no-ansi --no-interaction --no-plugins --no-scripts --no-autoloader --with-all-dependencies
-	composer dump-autoload --no-ansi --no-interaction --no-plugins --no-scripts --optimize --strict-psr --strict-ambiguous
+	composer update --no-plugins --no-scripts --no-autoloader --with-all-dependencies
+	composer dump-autoload --no-plugins --no-scripts --optimize --strict-psr --strict-ambiguous
 
 .PHONY: postcreate
 postcreate: install
@@ -107,11 +107,11 @@ secret:
 devcontainer:
 	devcontainer up
 	devcontainer exec /bin/bash
-	docker compose -f ./docker-compose-devcontainer.yml down --remove-orphans
+	docker compose -f ./docker-compose-devcontainer.yml down --remove-orphans --rmi=local
 
 # Dependencies
 ./composer.lock ./vendor: ./composer.json
-	${MAKE} update_composer
+	${MAKE} composer_update
 
 ./package-lock.json ./node_modules: ./package.json
 	${MAKE} npm_update
