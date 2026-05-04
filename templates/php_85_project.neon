@@ -1,5 +1,5 @@
 includes:
-  - ./vendor/tomaschochola/tooling-phpstan/src/configs/php_85_project.neon
+  - ./vendor/tomaschochola/tooling-phpstan/src/php_85_project.neon
 
 parameters:
   paths:
