@@ -98,8 +98,8 @@ postcreate: install
 .PHONY: devcontainer
 devcontainer:
 	devcontainer up
-	devcontainer exec /bin/bash
-	docker compose -f ./docker-compose-devcontainer.yml down --remove-orphans
+	devcontainer exec /bin/bash || true
+	docker ps -q --filter "label=devcontainer.local_folder=$${PWD}" | xargs -r docker stop
 
 # Dependencies
 ./composer.lock ./vendor: ./composer.json
