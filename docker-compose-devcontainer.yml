@@ -1,3 +1,4 @@
+name: 'tooling-phpstan-devcontainer'
 networks:
   devcontainer:
     internal: false
