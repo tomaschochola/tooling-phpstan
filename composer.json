@@ -35,7 +35,6 @@
   "minimum-stability": "dev",
   "name": "tomaschochola/tooling-phpstan",
   "prefer-stable": true,
-  "readme": "./README.md",
   "require": {
     "php": "^8.5.0",
     "phpstan/extension-installer": "^1.4",
