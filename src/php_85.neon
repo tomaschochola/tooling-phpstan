@@ -1,0 +1,34 @@
+includes:
+  - %rootDir%/../phpstan-beberlei-assert/extension.neon
+  - %rootDir%/../phpstan-deprecation-rules/rules.neon
+  - %rootDir%/../phpstan-dibi/extension.neon
+  - %rootDir%/../phpstan-doctrine/extension.neon
+  - %rootDir%/../phpstan-doctrine/rules.neon
+  - %rootDir%/../phpstan-mockery/extension.neon
+  - %rootDir%/../phpstan-nette/extension.neon
+  - %rootDir%/../phpstan-nette/rules.neon
+  - %rootDir%/../phpstan-phpunit/extension.neon
+  - %rootDir%/../phpstan-phpunit/rules.neon
+  - %rootDir%/../phpstan-strict-rules/rules.neon
+  - %rootDir%/../phpstan-symfony/extension.neon
+  - %rootDir%/../phpstan-symfony/rules.neon
+  - %rootDir%/../phpstan-webmozart-assert/extension.neon
+  - %rootDir%/conf/bleedingEdge.neon
+
+parameters:
+  checkBenevolentUnionTypes: true
+  checkImplicitMixed: true
+  checkMissingCallableSignature: true
+  checkMissingOverrideMethodAttribute: true
+  checkMissingOverridePropertyAttribute: true
+  checkUninitializedProperties: true
+  level: max
+  phpVersion: 80500
+  rememberPossiblyImpureFunctionValues: false
+  reportAlwaysTrueInLastCondition: true
+  reportAnyTypeWideningInVarTag: true
+  reportIgnoresWithoutComments: true
+  reportPossiblyNonexistentConstantArrayOffset: true
+  reportPossiblyNonexistentGeneralArrayOffset: true
+  tipsOfTheDay: false
+  treatPhpDocTypesAsCertain: false

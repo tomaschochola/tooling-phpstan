@@ -4,19 +4,29 @@
       "email": "tomaschochola@tomaschochola.cz",
       "homepage": "https://github.com/tomaschochola",
       "name": "Tomáš Chochola",
-      "role": "Author"
+      "role": "Enterprise Architect"
     }
   ],
   "config": {
     "allow-plugins": false,
-    "audit": {
-      "abandoned": "fail"
-    },
     "platform-check": true,
-    "process-timeout": 0,
+    "policy": {
+      "abandoned": {
+        "audit": "fail",
+        "block": true
+      },
+      "advisories": {
+        "audit": "fail",
+        "block": true
+      },
+      "malware": {
+        "audit": "fail",
+        "block": true
+      }
+    },
     "sort-packages": true
   },
-  "description": "tomaschochola/tooling-phpstan",
+  "description": "Shared strict PHPStan 2 configuration for PHP 8.5 libraries and applications.",
   "funding": [
     {
       "type": "github",
@@ -26,18 +36,15 @@
   "homepage": "https://github.com/tomaschochola/tooling-phpstan",
   "keywords": [
     "tomaschochola",
-    "TomasChochola",
-    "Tomas Chochola",
-    "Tomáš Chochola",
-    "tooling-phpstan"
+    "phpstan",
+    "static-analysis",
+    "tooling"
   ],
   "license": "CC-BY-ND-4.0",
-  "minimum-stability": "dev",
   "name": "tomaschochola/tooling-phpstan",
   "prefer-stable": true,
   "require": {
     "php": "^8.5.0",
-    "phpstan/extension-installer": "^1.4",
     "phpstan/phpstan": "^2.1",
     "phpstan/phpstan-beberlei-assert": "^2.0",
     "phpstan/phpstan-deprecation-rules": "^2.0",
@@ -58,7 +65,6 @@
     "roave/security-advisories": "dev-latest"
   },
   "support": {
-    "docs": "https://github.com/tomaschochola/tooling-phpstan",
     "email": "tomaschochola@tomaschochola.cz",
     "issues": "https://github.com/tomaschochola/tooling-phpstan/issues",
     "source": "https://github.com/tomaschochola/tooling-phpstan.git"

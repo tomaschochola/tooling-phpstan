@@ -1,31 +1,8 @@
 includes:
-  - %currentWorkingDirectory%/vendor/phpstan/phpstan-beberlei-assert/extension.neon
-  - %currentWorkingDirectory%/vendor/phpstan/phpstan-deprecation-rules/rules.neon
-  - %currentWorkingDirectory%/vendor/phpstan/phpstan-dibi/extension.neon
-  - %currentWorkingDirectory%/vendor/phpstan/phpstan-doctrine/extension.neon
-  - %currentWorkingDirectory%/vendor/phpstan/phpstan-doctrine/rules.neon
-  - %currentWorkingDirectory%/vendor/phpstan/phpstan-mockery/extension.neon
-  - %currentWorkingDirectory%/vendor/phpstan/phpstan-nette/extension.neon
-  - %currentWorkingDirectory%/vendor/phpstan/phpstan-nette/rules.neon
-  - %currentWorkingDirectory%/vendor/phpstan/phpstan-phpunit/extension.neon
-  - %currentWorkingDirectory%/vendor/phpstan/phpstan-phpunit/rules.neon
-  - %currentWorkingDirectory%/vendor/phpstan/phpstan-strict-rules/rules.neon
-  - %currentWorkingDirectory%/vendor/phpstan/phpstan-symfony/extension.neon
-  - %currentWorkingDirectory%/vendor/phpstan/phpstan-symfony/rules.neon
-  - %currentWorkingDirectory%/vendor/phpstan/phpstan-webmozart-assert/extension.neon
-  - %currentWorkingDirectory%/vendor/phpstan/phpstan/conf/bleedingEdge.neon
+  - ./php_85.neon
 
 parameters:
-  checkBenevolentUnionTypes: true
-  checkImplicitMixed: true
-  checkMissingCallableSignature: true
-  checkMissingOverrideMethodAttribute: true
+  checkTooWideParameterOutInProtectedAndPublicMethods: true
   checkTooWideReturnTypesInProtectedAndPublicMethods: true
-  checkUninitializedProperties: true
-  level: max
-  reportAlwaysTrueInLastCondition: true
-  reportAnyTypeWideningInVarTag: true
-  reportPossiblyNonexistentConstantArrayOffset: true
-  reportPossiblyNonexistentGeneralArrayOffset: true
-  tipsOfTheDay: false
-  treatPhpDocTypesAsCertain: false
+  checkTooWideThrowTypesInProtectedAndPublicMethods: true
+  treatPhpDocTypesAsCertain: true

@@ -3,5 +3,7 @@ includes:
 
 parameters:
   paths:
+    - ./.php-cs-fixer.php
     - ./src
     - ./tests
+  tmpDir: ./.phpstan.cache

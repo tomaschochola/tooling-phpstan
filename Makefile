@@ -40,7 +40,7 @@ check: trimmer_check composer_diagnose lint static audit
 lint: eslint_check prettier_check
 
 .PHONY: static
-static: composer_autoload_check
+static: phpstan_check composer_autoload_check
 
 .PHONY: audit
 audit: npm_audit composer_audit
@@ -112,6 +112,11 @@ composer_diagnose: ./composer.json ./composer.lock
 .PHONY: composer_autoload_check
 composer_autoload_check: ./vendor/autoload.php ./composer.json ./composer.lock
 	composer dump-autoload --no-plugins --no-scripts --optimize --strict-psr --strict-ambiguous --dry-run
+
+.PHONY: phpstan_check
+phpstan_check: ./vendor/autoload.php ./composer.json ./composer.lock ./src/php_85.neon ./src/php_85_library.neon ./src/php_85_project.neon ./tests/fixture.php
+	composer exec --no-plugins --no-scripts -- phpstan analyse --configuration=./src/php_85_library.neon --no-progress --error-format=raw ./tests/fixture.php
+	composer exec --no-plugins --no-scripts -- phpstan analyse --configuration=./src/php_85_project.neon --no-progress --error-format=raw ./tests/fixture.php
 
 .PHONY: npm_install
 npm_install: ./package.json ./package-lock.json
