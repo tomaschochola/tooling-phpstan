@@ -4,7 +4,7 @@
       "email": "tomaschochola@tomaschochola.cz",
       "homepage": "https://github.com/tomaschochola",
       "name": "Tomáš Chochola",
-      "role": "Enterprise Architect"
+      "role": "Author"
     }
   ],
   "config": {
@@ -36,6 +36,9 @@
   "homepage": "https://github.com/tomaschochola/tooling-phpstan",
   "keywords": [
     "tomaschochola",
+    "TomasChochola",
+    "Tomas Chochola",
+    "Tomáš Chochola",
     "phpstan",
     "static-analysis",
     "tooling"
