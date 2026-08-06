@@ -5,3 +5,4 @@ parameters:
   checkTooWideParameterOutInProtectedAndPublicMethods: false
   checkTooWideReturnTypesInProtectedAndPublicMethods: false
   checkTooWideThrowTypesInProtectedAndPublicMethods: false
+  treatPhpDocTypesAsCertain: false

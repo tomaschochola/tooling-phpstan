@@ -31,4 +31,3 @@ parameters:
   reportPossiblyNonexistentConstantArrayOffset: true
   reportPossiblyNonexistentGeneralArrayOffset: true
   tipsOfTheDay: false
-  treatPhpDocTypesAsCertain: false
