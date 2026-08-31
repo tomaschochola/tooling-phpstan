@@ -1,76 +1,76 @@
 {
-  "authors": [
-    {
-      "email": "tomaschochola@tomaschochola.cz",
-      "homepage": "https://github.com/tomaschochola",
-      "name": "Tomáš Chochola",
-      "role": "Author"
-    }
-  ],
-  "config": {
-    "allow-plugins": false,
-    "platform-check": true,
-    "policy": {
-      "abandoned": {
-        "audit": "fail",
-        "block": true
-      },
-      "advisories": {
-        "audit": "fail",
-        "block": true
-      },
-      "malware": {
-        "audit": "fail",
-        "block": true
-      }
+    "authors": [
+        {
+            "email": "tomaschochola@tomaschochola.cz",
+            "homepage": "https://github.com/tomaschochola",
+            "name": "Tomáš Chochola",
+            "role": "Author"
+        }
+    ],
+    "config": {
+        "allow-plugins": false,
+        "platform-check": true,
+        "policy": {
+            "abandoned": {
+                "audit": "fail",
+                "block": true
+            },
+            "advisories": {
+                "audit": "fail",
+                "block": true
+            },
+            "malware": {
+                "audit": "fail",
+                "block": true
+            }
+        },
+        "sort-packages": true
     },
-    "sort-packages": true
-  },
-  "description": "Shared strict PHPStan 2 configuration for PHP 8.5 libraries and applications.",
-  "funding": [
-    {
-      "type": "github",
-      "url": "https://github.com/sponsors/tomaschochola"
-    }
-  ],
-  "homepage": "https://github.com/tomaschochola/tooling-phpstan",
-  "keywords": [
-    "tomaschochola",
-    "TomasChochola",
-    "Tomas Chochola",
-    "Tomáš Chochola",
-    "phpstan",
-    "static-analysis",
-    "tooling"
-  ],
-  "license": "CC-BY-ND-4.0",
-  "name": "tomaschochola/tooling-phpstan",
-  "prefer-stable": true,
-  "require": {
-    "php": "^8.5.0",
-    "phpstan/phpstan": "^2.1",
-    "phpstan/phpstan-beberlei-assert": "^2.0",
-    "phpstan/phpstan-deprecation-rules": "^2.0",
-    "phpstan/phpstan-dibi": "^2.0",
-    "phpstan/phpstan-doctrine": "^2.0",
-    "phpstan/phpstan-mockery": "^2.0",
-    "phpstan/phpstan-nette": "^2.0",
-    "phpstan/phpstan-phpunit": "^2.0",
-    "phpstan/phpstan-strict-rules": "^2.0",
-    "phpstan/phpstan-symfony": "^2.0",
-    "phpstan/phpstan-webmozart-assert": "^2.0"
-  },
-  "require-dev": {
-    "ext-intl": "*",
-    "ext-pcntl": "*",
-    "ext-xdebug": "*",
-    "ext-zip": "*",
-    "roave/security-advisories": "dev-latest"
-  },
-  "support": {
-    "email": "tomaschochola@tomaschochola.cz",
-    "issues": "https://github.com/tomaschochola/tooling-phpstan/issues",
-    "source": "https://github.com/tomaschochola/tooling-phpstan.git"
-  },
-  "type": "library"
+    "description": "Shared strict PHPStan 2 configuration for PHP 8.5 libraries and applications.",
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/tomaschochola"
+        }
+    ],
+    "homepage": "https://github.com/tomaschochola/tooling-phpstan",
+    "keywords": [
+        "tomaschochola",
+        "TomasChochola",
+        "Tomas Chochola",
+        "Tomáš Chochola",
+        "phpstan",
+        "static-analysis",
+        "tooling"
+    ],
+    "license": "CC-BY-ND-4.0",
+    "name": "tomaschochola/tooling-phpstan",
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.5.0",
+        "phpstan/phpstan": "^2.1",
+        "phpstan/phpstan-beberlei-assert": "^2.0",
+        "phpstan/phpstan-deprecation-rules": "^2.0",
+        "phpstan/phpstan-dibi": "^2.0",
+        "phpstan/phpstan-doctrine": "^2.0",
+        "phpstan/phpstan-mockery": "^2.0",
+        "phpstan/phpstan-nette": "^2.0",
+        "phpstan/phpstan-phpunit": "^2.0",
+        "phpstan/phpstan-strict-rules": "^2.0",
+        "phpstan/phpstan-symfony": "^2.0",
+        "phpstan/phpstan-webmozart-assert": "^2.0"
+    },
+    "require-dev": {
+        "ext-intl": "*",
+        "ext-pcntl": "*",
+        "ext-xdebug": "*",
+        "ext-zip": "*",
+        "roave/security-advisories": "dev-latest"
+    },
+    "support": {
+        "email": "tomaschochola@tomaschochola.cz",
+        "issues": "https://github.com/tomaschochola/tooling-phpstan/issues",
+        "source": "https://github.com/tomaschochola/tooling-phpstan.git"
+    },
+    "type": "library"
 }
