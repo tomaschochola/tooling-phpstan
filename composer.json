@@ -39,9 +39,7 @@
         "TomasChochola",
         "Tomas Chochola",
         "Tomáš Chochola",
-        "phpstan",
-        "static-analysis",
-        "tooling"
+        "tooling-phpstan"
     ],
     "license": "CC-BY-ND-4.0",
     "name": "tomaschochola/tooling-phpstan",
