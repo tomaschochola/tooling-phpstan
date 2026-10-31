@@ -46,17 +46,17 @@
     "prefer-stable": true,
     "require": {
         "php": "^8.5.0",
-        "phpstan/phpstan": "^2.1",
-        "phpstan/phpstan-beberlei-assert": "^2.0",
-        "phpstan/phpstan-deprecation-rules": "^2.0",
-        "phpstan/phpstan-dibi": "^2.0",
-        "phpstan/phpstan-doctrine": "^2.0",
-        "phpstan/phpstan-mockery": "^2.0",
-        "phpstan/phpstan-nette": "^2.0",
-        "phpstan/phpstan-phpunit": "^2.0",
-        "phpstan/phpstan-strict-rules": "^2.0",
-        "phpstan/phpstan-symfony": "^2.0",
-        "phpstan/phpstan-webmozart-assert": "^2.0"
+        "phpstan/phpstan": "^2.3.4",
+        "phpstan/phpstan-beberlei-assert": "^2.0.2",
+        "phpstan/phpstan-deprecation-rules": "^2.0.5",
+        "phpstan/phpstan-dibi": "^2.0.0",
+        "phpstan/phpstan-doctrine": "^2.1.0",
+        "phpstan/phpstan-mockery": "^2.0.0",
+        "phpstan/phpstan-nette": "^2.0.15",
+        "phpstan/phpstan-phpunit": "^2.1.1",
+        "phpstan/phpstan-strict-rules": "^2.1.0",
+        "phpstan/phpstan-symfony": "^2.1.1",
+        "phpstan/phpstan-webmozart-assert": "^2.0.0"
     },
     "require-dev": {
         "ext-intl": "*",
